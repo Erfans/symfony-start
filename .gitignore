@@ -1,0 +1,6 @@
+docker/mysql
+!docker/mysql/.gitkeep
+
+/.env
+.idea
+.DS_Store
