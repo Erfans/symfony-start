@@ -25,7 +25,8 @@ RUN apt-get install -y libicu-dev
 RUN docker-php-ext-configure intl && docker-php-ext-install intl
 
 # install npm
-RUN apt-get -y install nodejs npm
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &&\
+apt-get install -y nodejs
 RUN npm install --global yarn
 
 # install xdebug
